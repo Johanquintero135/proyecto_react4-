@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="logo-text">Synapse</div>
 
           {/* Links visibles solo en pantallas grandes */}
-          <div className="hidden md:flex gap-4">
+          <div className="desktop-nav gap-4">
             <a href="#inicio" className="nav-link">Inicio</a>
             <a href="#servicios" className="nav-link">Servicios</a>
             <a href="#contacto" className="nav-link">Contacto</a>

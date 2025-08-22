@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌈 Estilos mejorados para el navbar */
+/*  Estilos mejorados para el navbar */
 .navbar-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   backdrop-filter: blur(10px);
@@ -61,7 +61,7 @@
   transform: translateY(0);
 }
 
-/* 🍔 Botón hamburguesa */
+/*  Botón hamburguesa */
 .hamburger-btn {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -89,7 +89,7 @@
   transform: scale(0.95);
 }
 
-/* 📱 Menú móvil */
+/*  Menú móvil */
 .mobile-menu {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
@@ -148,14 +148,14 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* ⚙️ Container principal */
+/*  Container principal */
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* 📝 Contenido principal */
+/*  Contenido principal */
 .main-content {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -202,25 +202,29 @@
   margin-bottom: 1rem;
 }
 
-/* 🌍 Fondo */
+/*  Fondo */
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
-/* 📱 Responsive */
-@media (min-width: 768px) {
-  .md\:hidden{
-    display: none;
-  }
+/*  Responsive */
+.desktop-nav {
+  display: none; /* Por defecto oculto en móvil */
 }
+@media (min-width: 768px) {
   .desktop-nav {
-    display: flex; /* ✅ Solo se activa en pantallas grandes */
+    display: flex; /* ✅ Solo se muestra en pantallas grandes */
     flex-direction: row;
     gap: 0.5rem;
     align-items: center;
   }
+  
+  .md\:hidden {
+    display: none;
+  }
+}
 
 
 .navbar-flex {
