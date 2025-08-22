@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos mejorados para el navbar */
+/* 🌈 Estilos mejorados para el navbar */
 .navbar-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   backdrop-filter: blur(10px);
@@ -21,6 +21,7 @@
   letter-spacing: -0.02em;
 }
 
+/* Links del navbar */
 .nav-link {
   color: white;
   text-decoration: none;
@@ -60,7 +61,7 @@
   transform: translateY(0);
 }
 
-/* Botón hamburguesa mejorado */
+/* 🍔 Botón hamburguesa */
 .hamburger-btn {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -88,7 +89,7 @@
   transform: scale(0.95);
 }
 
-/* Menú móvil mejorado */
+/* 📱 Menú móvil */
 .mobile-menu {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
@@ -147,14 +148,14 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Container principal */
+/* ⚙️ Container principal */
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Contenido principal mejorado */
+/* 📝 Contenido principal */
 .main-content {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -201,27 +202,27 @@
   margin-bottom: 1rem;
 }
 
-/* Background del body */
+/* 🌍 Fondo */
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
-/* Responsivo */
+/* 📱 Responsive */
 @media (min-width: 768px) {
-  .md\:flex { display: flex !important; }
-  .md\:hidden { display: none !important; }
-  
+  .md\:hidden{
+    display: none;
+  }
+}
   .desktop-nav {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex; /* ✅ Solo se activa en pantallas grandes */
+    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
   }
-}
 
-/* Asegurar que el navbar principal use flexbox correctamente */
+
 .navbar-flex {
   display: flex;
   justify-content: space-between;
@@ -229,25 +230,20 @@ body {
   width: 100%;
 }
 
-/* Forzar que los enlaces estén en horizontal en desktop */
-.desktop-nav a {
-  display: inline-block;
-}
-
 @media (max-width: 767px) {
   .main-content {
     padding: 2rem 1rem;
   }
-  
+
   .section {
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .section-subtitle {
     font-size: 1.5rem;
   }
